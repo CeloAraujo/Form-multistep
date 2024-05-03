@@ -28,8 +28,11 @@ function FormPage() {
 
   const formComponents = useMemo(() => {
     return [
+      // eslint-disable-next-line react/jsx-key
       <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
+      // eslint-disable-next-line react/jsx-key
       <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
+      // eslint-disable-next-line react/jsx-key
       <Thanks data={data} />,
     ];
   }, [data]);
